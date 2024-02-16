@@ -1,108 +1,59 @@
-/* Resetting default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Improved Animedex Styles */
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Navigation Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+.navbar a:hover {
+  background-color: #555;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+/* Card Styles */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
 }
 
-.nav-links {
-    list-style: none;
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.nav-links li {
-    display: inline;
-    margin-left: 20px;
+.card h2 {
+  margin-top: 0;
 }
 
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
+.card p {
+  margin-bottom: 0;
 }
 
-/* Hero section styles */
-.hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-.hero-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #ff5733;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #ff8c66;
-}
-
-/* Features section styles */
-.features {
-    padding: 50px 0;
-    background-color: #f4f4f4;
-}
-
-.feature {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.feature h2 {
-    margin-bottom: 10px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
