@@ -1,11 +1,9 @@
 // Api urls
-
 const ProxyApi = "https://proxy.techzbots1.workers.dev/?u="
 const IndexApi = "/home";
 const recentapi = "/recent/";
 
 // Api Server Manager
-
 const AvailableServers = ['https://api1.anime-dex.workers.dev', 'https://api2.anime-dex.workers.dev', 'https://api3.anime-dex.workers.dev']
 
 function getApiServer() {
@@ -13,11 +11,9 @@ function getApiServer() {
 }
 
 // Usefull functions
-
 async function getJson(path, errCount = 0) {
     const ApiServer = getApiServer();
     let url = ApiServer + path;
-
 
     if (errCount > 2) {
         throw `Too many errors while fetching ${url}`;
@@ -112,7 +108,8 @@ async function getPopularAnimes(data) {
 
     document.querySelector(".popularg").innerHTML = POPULAR_HTML;
 }
-// Adding popular animes (popular animes from gogoanime)
+
+// Adding recent animes (recently released animes)
 async function getRecentAnimes(page = 1) {
     const data = (await getJson(recentapi + page))["results"];
     let RECENT_HTML = "";
@@ -235,9 +232,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
 // Running functions
-
 getJson(IndexApi).then((data) => {
     data = data["results"];
     const anilistTrending = shuffle(data["anilistTrending"]);
