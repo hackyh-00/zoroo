@@ -3,7 +3,7 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #282828;
+    background-color: #04ff00;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
 }
 
 footer {
-    background: #eb3349;
+    background: #000000;
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
@@ -44,7 +44,7 @@ footer a {
 }
 
 #head-div {
-    background: linear-gradient(to right, #eb3349 40%, #f45c43);
+    background: linear-gradient(to right, #000000 40%, #4ff443);
     width: 100%;
     text-align: center;
     padding-top: 25px;
@@ -57,7 +57,7 @@ footer a {
 }
 
 h1 {
-    color: #eb3349;
+    color: #000000;
     font-family: "Poppins", sans-serif;
 }
 
@@ -174,7 +174,7 @@ h1 {
 }
 
 .watch-btn {
-    background: #ed3832;
+    background: #1eff00;
     color: black;
     border-radius: 4px;
     font-weight: 400;
@@ -272,7 +272,7 @@ h1 {
 
 h2 {
     font-family: "Montserrat", sans-serif;
-    color: #ed3832;
+    color: #000000;
     font-weight: 500;
     width: 100%;
     font-size: 20px;
@@ -353,7 +353,7 @@ h2 {
 
 .dubb {
     color: white;
-    background-color: red;
+    background-color: black;
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -683,7 +683,7 @@ h2 {
 }
 
 .spotlight {
-    color: #ed3832;
+    color: #000000;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     margin-bottom: 20px;
@@ -719,7 +719,7 @@ h2 {
 }
 
 .cbox1 {
-    background-color: #ed3832;
+    background-color: #000000;
     color: black;
     font-family: "Montserrat", sans-serif;
     border: none;
