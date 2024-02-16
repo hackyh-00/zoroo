@@ -1,124 +1,108 @@
-/* styles.css */
-
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Resetting default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav ul li {
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
+.nav-links li a {
     color: #fff;
+    text-decoration: none;
 }
 
-main {
-    padding: 20px;
+/* Hero section styles */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
 }
 
-section {
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8c66;
+}
+
+/* Features section styles */
+.features {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.feature {
+    text-align: center;
     margin-bottom: 40px;
 }
 
-h2 {
-    color: #333;
+.feature h2 {
+    margin-bottom: 10px;
 }
 
-/* Slideshow Styles */
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.mySlides {
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.mySlides img {
-    max-width: 100%;
-    height: auto;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #fff;
-    font-size: 24px;
-    z-index: 1;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-/* Popular and Recent Animes Styles */
-.poster {
-    position: relative;
-    width: 200px;
-    height: 300px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.poster img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.poster:hover img {
-    transform: scale(1.1);
-}
-
-.poster .shadow {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+/* Footer styles */
+footer {
+    background-color: #333;
     color: #fff;
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.poster:hover .shadow {
-    opacity: 1;
-}
-
-.shadow .dubb {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-
-.shadow .dubb2 {
-    font-size: 12px;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
