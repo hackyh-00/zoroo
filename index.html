@@ -2,57 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Additional styles can be added here */
-    </style>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>AnimeDex - Watch High Quality Anime Online</title>
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content="AnimeDex - Watch High Quality Anime Online. Discover the latest trending and popular anime series for free." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo">My Website</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>AnimeDex</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Website</h1>
-            <p>A place where you can find amazing content.</p>
+        <div class="container">
+            <h2>Discover the Best Anime</h2>
+            <p>Explore a vast collection of high-quality anime series and movies for free.</p>
             <a href="#" class="btn">Get Started</a>
         </div>
     </section>
 
-    <section class="features">
-        <div class="feature">
-            <h2>Feature 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                tristique.</p>
+    <section class="trending">
+        <div class="container">
+            <h2>Trending Now</h2>
+            <div class="anime-list">
+                <!-- Trending Anime will be dynamically populated here -->
+            </div>
         </div>
-        <div class="feature">
-            <h2>Feature 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                tristique.</p>
-        </div>
-        <div class="feature">
-            <h2>Feature 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                tristique.</p>
+    </section>
+
+    <section class="popular">
+        <div class="container">
+            <h2>Popular Anime</h2>
+            <div class="anime-list">
+                <!-- Popular Anime will be dynamically populated here -->
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 AnimeDex. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
